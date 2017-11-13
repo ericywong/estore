@@ -38,6 +38,12 @@ gem 'spree', '~> 3.3'
 gem 'spree_auth_devise', '~> 3.3'
 gem 'spree_gateway', '~> 3.3'
 
+# For Spree Language Extension
+gem 'spree_i18n', github: 'spree-contrib/spree_i18n', branch: 'master'
+
+# Mysql2
+gem 'mysql2', '~> 0.4.9'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
@@ -57,3 +63,6 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+# Path to simple sales
+gem 'spree_simple_sales', path: 'spree_simple_sales'
